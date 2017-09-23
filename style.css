@@ -1,0 +1,253 @@
+
+    /* inactive 
+    @import url("snippets/BEM_check.css");
+    */
+
+html {
+    --custom-red: #d4021d; /* --- TEST - user defined colors and other variables ---
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+     */
+    background: url("images/chalk_bg.jpg") fixed no-repeat;
+    background-size: cover;
+    overflow-y: scroll; /* da się bez tego mieć stałą szerokość strony? */
+}
+* {
+    margin:0;
+    padding:0;
+}
+
+/* --- General layout/theme section --- */ 
+.siteview {
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFF;
+    background: #333 url("images/landing_bg.jpg") no-repeat center top;
+
+    
+    width: 920px;
+    margin: 0 auto;
+}
+.siteview--nagrody, .siteview--zasady {
+    background: #333 url("images/nagrody_bg.jpg") no-repeat center top;}
+.siteview--gallery {
+    background: #333 url("images/gallery_bg.jpg") no-repeat center top;
+}
+
+/* --- header  section --- */ 
+.header__logo {
+    margin-left: 32px;
+    margin-top: 32px;
+    float: left;
+}
+
+/* --- menu section --- */
+.menu {
+    padding-top: 48px;
+}
+.mainmenu {
+    list-style: none;
+    background-color: white;
+    height: 90px;
+    padding-left: 320px;
+    margin: 0;
+}
+.mainmenu__item {
+    font-size: 24px;
+}
+.mainmenu_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--custom-red);
+    float: left;
+    padding: 1.2em 0.5em 0.2em 0.5em;
+}
+.mainmenu_link:hover,
+.mainmenu_link:focus {
+    border-bottom: 4px solid slategrey;
+}
+.mainmenu_link--to-register {
+    color: black;
+}
+.mainmenu_link--to-register:hover {
+    border-bottom: 4px solid var(--custom-red);
+}
+
+/* --- content section --- */ 
+.content {
+    margin-top: 486px;
+    clear: left; /* just in case */
+    background: var(--custom-red);
+    padding-bottom: 32px;
+    
+    /*padding-left: 24px;
+    padding-right: 24px;*/
+}
+.content--alternative-colors {
+    background: white;
+    color: black;
+}
+
+.content__banner {
+    color: var(--custom-red);
+    background: white;
+    font-size: 22px;
+    padding: 1em 0;
+    margin: 0;
+    margin-bottom: 24px;    
+    text-align: center;
+    text-transform: uppercase;
+}
+.content__banner--alternative {
+    color: white;
+    background: var(--custom-red);
+}
+.content__yell {
+    font-weight: 700;
+    padding: 16px 64px;
+    margin: 0;   
+    font-family: "Clarendon", "Georgia", "Palatino Linotype", "Garamond", serif; 
+    text-transform: uppercase;
+    text-align: center;
+}
+.content__yell--large {
+    font-size: 38px;
+}
+.content__yell-medium {
+    font-size: 24px; /* taki sam jak dla całej strony - definiować? */
+}
+.content__yell--small {
+    font-size: 20px;
+}
+.content__yell--strong {
+    font-size: 60px;
+    padding: 0;
+}
+.content__link--to-rules {
+    color: black;
+    text-decoration: none;
+}
+.content__link--to-rules:hover,
+.content__link--to-rules:focus {
+    text-decoration: underline;
+}
+.content__link--to-rules::after {
+    content: " >"
+}
+.content__description {
+    font-size: 20px;
+    text-transform: none;
+    padding: 0 2em;
+    text-align: justify;
+    word-spacing: 110%;
+    line-height: 150%;
+}
+
+.content__list {
+    margin: 2em;
+    margin-left: 3em;
+}
+.content__list-item {
+    padding: 0.25em;
+}
+
+
+.content__bony {
+    margin: 1em;
+}
+
+
+
+/* --- gallery  section  --- */
+.content--gallery {
+    background: none;
+    margin-top: 64px;
+}
+
+.gallery__list {
+    padding: 0;
+    margin: 0 auto;
+    width: 900px;
+    list-style: none;
+    
+}
+.gallery__item {
+    border: 5px solid black;
+    margin: 1em;
+    padding: 0;
+    background: white;
+    width: 218px;
+    height: 170px;
+    
+}
+.gallery__authorname {
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    line-height: 32px;
+    background: var(--custom-red);
+    height: 32px;
+    width: 218px;
+    margin: 0;
+}
+.gallery__picture {
+    margin: 0;
+    padding: 8px;
+    display: block;
+}
+.gallery__picture:hover {
+    cursor: url("images/cursor_hugehand.png"), auto;
+}
+
+
+.content__pageswitch {
+    width: 920px;
+    height: 68px;
+    color: white;
+    background-color: var(--custom-red);
+    display: block;
+    line-height: 64px;
+}
+
+
+.content__pageswitch-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    color:white;
+    margin-left: 0.5em;
+}
+.content__pageswitch-button:hover {
+    text-decoration: underline;
+}
+
+.content__pageswitch-button--inactive:hover {
+    text-decoration: none;
+}
+
+
+
+
+
+
+.content__pageswitch-center-section {
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    width: 300px;
+}
+.content__pageswitch-left-section {
+    float: left;
+    width: 280px;
+    padding-left: 20px;
+    text-align: left;
+}
+.content__pageswitch-right-section {
+    float: right;
+    width: 280px;
+    padding-right: 20px;
+    text-align: right;
+}
+
