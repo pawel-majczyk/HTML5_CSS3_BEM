@@ -175,11 +175,12 @@ html {
 }
 .gallery__item {
     display: inline-block;
-    margin: 1em;
+    margin: 1em 1.4em;
     padding: 0;
     background: white;
     width: 218px;
     height: 170px;
+    background: #fff url("images/picture_thumbinal.png") 8px 40px no-repeat;
     
 }
 .gallery__authorname {
@@ -192,13 +193,18 @@ html {
     width: 218px;
     margin: 0;
 }
-.gallery__picture {
+.gallery__picture-link {
+    margin-top: 32px;
+    width: 202px;;
+    height: 122px;
     margin: 0;
     padding: 8px;
     display: block;
 }
-.gallery__picture:hover {
+.gallery__picture-link:hover {
     cursor: url("images/cursor_hugehand.png"), auto;
+    background: var(--custom-red) url("images/zoom_icon.png") center no-repeat;
+    opacity: 0.4;
 }
 
 /* -- pageswitcher module -- */

@@ -1,4 +1,15 @@
 "# testing-learning" 
 
+„Bliskość”
 
-test commita - srutututu
+Tu chodzi o to
+żeby grać
+na dwie
+osoby
+
+jak tkoś ma
+osobę
+to fajnie
+
+ja kurat
+nie mam
