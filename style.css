@@ -168,13 +168,13 @@ html {
 
 .gallery__list {
     padding: 0;
-    margin: 0 auto;
+    margin: 2em;
     width: 900px;
     list-style: none;
     
 }
 .gallery__item {
-    border: 5px solid black;
+    display: inline-block;
     margin: 1em;
     padding: 0;
     background: white;
@@ -201,6 +201,7 @@ html {
     cursor: url("images/cursor_hugehand.png"), auto;
 }
 
+/* -- pageswitcher module -- */
 
 .content__pageswitch {
     width: 920px;
@@ -209,6 +210,7 @@ html {
     background-color: var(--custom-red);
     display: block;
     line-height: 64px;
+    margin-top: 64px;
 }
 
 
@@ -226,11 +228,6 @@ html {
 .content__pageswitch-button--inactive:hover {
     text-decoration: none;
 }
-
-
-
-
-
 
 .content__pageswitch-center-section {
     margin: 0 auto;
