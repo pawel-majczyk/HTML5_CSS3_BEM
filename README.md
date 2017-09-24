@@ -14,4 +14,4 @@ to fajnie
 
 
 ja akurat  
-nie mam"  
+nie mam
