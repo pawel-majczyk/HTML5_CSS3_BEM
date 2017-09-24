@@ -1,15 +1,17 @@
 # testing-learning
 
-> "„Bliskość”  
+## „Bliskość”
 
-> Tu chodzi o to  
-> żeby grać  
-> na dwie  
-> osoby  
+Tu chodzi o to  
+żeby grać  
+na dwie  
+osoby  
 
-> jak ktoś ma  
-> osobę  
-> to fajnie  
 
-> ja akurat  
-> nie mam"  
+jak ktoś ma  
+osobę  
+to fajnie  
+
+
+ja akurat  
+nie mam"  
