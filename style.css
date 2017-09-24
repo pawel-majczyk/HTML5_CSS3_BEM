@@ -57,21 +57,21 @@ html {
 .mainmenu__item {
     font-size: 24px;
 }
-.mainmenu_link {
+.mainmenu__link {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--custom-red);
     float: left;
     padding: 1.2em 0.5em 0.2em 0.5em;
 }
-.mainmenu_link:hover,
-.mainmenu_link:focus {
+.mainmenu__link:hover,
+.mainmenu__link:focus {
     border-bottom: 4px solid slategrey;
 }
-.mainmenu_link--to-register {
+.mainmenu__link--to-register {
     color: black;
 }
-.mainmenu_link--to-register:hover {
+.mainmenu__link--to-register:hover {
     border-bottom: 4px solid var(--custom-red);
 }
 
