@@ -1,0 +1,23 @@
+/* Useful values:
+    custom red: #d4021d
+
+*/
+
+
+html {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: url("images/chalk_bg.jpg") fixed no-repeat;
+        background-size: cover;
+}
+
+* {
+        margin:0;
+        padding:0;
+    }
+
+
+/* ### GENERAL LAYOUT ### */
+
+

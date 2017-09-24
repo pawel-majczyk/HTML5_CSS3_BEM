@@ -1,15 +1,16 @@
-"# testing-learning" 
+# testing-learning
 
-> "„Bliskość”  
-> 
-> Tu chodzi o to  
-> żeby grać  
-> na dwie  
-> osoby  
->   
-> jak ktoś ma  
-> osobę  
-> to fajnie  
->   
-> ja akurat  
-> nie mam"  
+### „Niezłomność”  
+
+To jest tak  
+jak w prawdziwym życiu  
+
+
+niektórzy ludzie  
+są dla nas za mocni  
+inni za słabi  
+
+
+ale warto  
+próbować się zmierzyć  
+
