@@ -144,7 +144,10 @@ html {
 /* --- gallery  section  --- */
 .content--gallery {
     background: none;
-    margin-top: 64px;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
 }
 
 .gallery__list {
