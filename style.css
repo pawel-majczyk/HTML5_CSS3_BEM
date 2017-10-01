@@ -1,18 +1,18 @@
 
-    /* inactive 
-    @import url("snippets/BEM_check.css");
-    */
+/* inactive 
+@import url("snippets/BEM_check.css");
+*/
 
 html {
-    --custom-red: #d4021d; /* --- TEST - user defined colors and other variables ---
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-     */
+    
     background: url("images/chalk_bg.jpg") fixed no-repeat;
     background-size: cover;
-    overflow-y: scroll; /* da się bez tego mieć stałą szerokość strony? */
+    overflow-y: scroll;
 }
+/* will be replaced with reset.css */
 * {
     margin:0;
     padding:0;
@@ -55,14 +55,14 @@ html {
     margin: 0;
 }
 .mainmenu__item {
-    font-size: 24px;
+    font-size: 1.2em;
+    float: left;
+    padding: 1.2em 0.5em 0.2em 0.5em;
 }
 .mainmenu__link {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--custom-red);
-    float: left;
-    padding: 1.2em 0.5em 0.2em 0.5em;
+    color: #d4021d;
 }
 .mainmenu__link:hover,
 .mainmenu__link:focus {
@@ -72,18 +72,15 @@ html {
     color: black;
 }
 .mainmenu__link--to-register:hover {
-    border-bottom: 4px solid var(--custom-red);
+    border-bottom: 4px solid #d4021d;
 }
 
 /* --- content section --- */ 
 .content {
     margin-top: 486px;
     clear: left; /* just in case */
-    background: var(--custom-red);
+    background: #d4021d;
     padding-bottom: 32px;
-    
-    /*padding-left: 24px;
-    padding-right: 24px;*/
 }
 .content--alternative-colors {
     background: white;
@@ -91,7 +88,7 @@ html {
 }
 
 .content__banner {
-    color: var(--custom-red);
+    color: #d4021d;
     background: white;
     font-size: 22px;
     padding: 1em 0;
@@ -102,7 +99,7 @@ html {
 }
 .content__banner--alternative {
     color: white;
-    background: var(--custom-red);
+    background: #d4021d;
 }
 .content__yell {
     font-weight: 700;
@@ -134,13 +131,13 @@ html {
     text-decoration: underline;
 }
 .content__link--to-rules::after {
-    content: " >"
+    content: ">"
 }
 .content__description {
-    font-size: 20px;
+    font-size: 85%;
     text-transform: none;
     padding: 0 2em;
-    text-align: justify;
+    text-align: left;
     word-spacing: 110%;
     line-height: 150%;
 }
@@ -167,9 +164,7 @@ html {
 }
 
 .gallery__list {
-    padding: 0;
     margin: 2em;
-    width: 900px;
     list-style: none;
     
 }
@@ -188,7 +183,7 @@ html {
     font-size: 16px;
     text-align: center;
     line-height: 32px;
-    background: var(--custom-red);
+    background: #d4021d;
     height: 32px;
     width: 218px;
     margin: 0;
@@ -203,7 +198,7 @@ html {
 }
 .gallery__picture-link:hover {
     cursor: url("images/cursor_hugehand.png"), auto;
-    background: var(--custom-red) url("images/zoom_icon.png") center no-repeat;
+    background: #d4021d url("images/zoom_icon.png") center no-repeat;
     opacity: 0.4;
 }
 
@@ -213,7 +208,7 @@ html {
     width: 920px;
     height: 68px;
     color: white;
-    background-color: var(--custom-red);
+    background-color: #d4021d;
     display: block;
     line-height: 64px;
     margin-top: 64px;
@@ -238,19 +233,152 @@ html {
 .content__pageswitch-center-section {
     margin: 0 auto;
     text-align: center;
-    display: inline-block;
-    width: 300px;
+    display: block;
 }
 .content__pageswitch-left-section {
     float: left;
-    width: 280px;
     padding-left: 20px;
     text-align: left;
 }
 .content__pageswitch-right-section {
     float: right;
-    width: 280px;
     padding-right: 20px;
     text-align: right;
 }
 
+
+.content__bony img {}
+
+/*
+
+@keyframes slideInLeft {
+    from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  
+[class$="--slide-from-left"] {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+*/
+
+/* --- small screen setup --- */
+@media screen and (max-width: 920px) {
+    .siteview {
+        width: 100%;
+        background-attachment: local;
+        background-position-y: -290px;
+    }
+    .siteview--nagrody, .siteview--zasady {
+        background-position-x: 130px;
+
+        background-position-y: -275px;
+    }
+    .siteview--gallery {
+        background: #333 url("images/chalk_bg.jpg") no-repeat center top;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .header__logo {
+        margin: 0;
+        background-color: white;
+        width: 130px;
+        height: 130px;
+        float: none;
+    }
+    .menu {
+        padding-top: 0;
+        line-height: 22px;
+    }
+    .mainmenu {
+        padding: 0;
+        height: auto;
+        float: left;
+        background: none;
+    }
+    .mainmenu__item {
+        margin: 0;
+        background: white;  
+        display: inline-block;
+        padding: 0.5em;
+        border-right: 1px dashed #aaa;
+        border-bottom: 1px dashed #aaa;
+    }
+    .mainmenu__item:first-child {    
+        border-left: 1px dashed #aaa;
+    }
+    .mainmenu__item:hover, .mainmenu__link:focus {
+        background-color: #efefef;
+    }
+    .header__logo {
+        float: none;
+    }
+    .content__banner {
+        border-top: 6px solid #ccc;
+    }
+    .content {
+        margin-top: 0;
+    }
+    .content__bony {}
+    .content__bon-picture{
+        width: 48%;
+        min-width: 220px;
+    }
+    .gallery__list {
+        margin:0 auto;
+    }
+    .gallery__item {
+        margin: 8px;
+    }
+    .content__pageswitch {
+        width: 100%;
+    }
+    .content__pageswitch-button {
+        font-size: 0.8em;
+    }
+    .content__pageswitch-left-section {
+        padding-left: 8px;
+        width: auto;
+        
+    }
+    .content__pageswitch-right-section {
+        padding-right: 8px;
+        width: auto;
+
+    }
+    .content__pageswitch-center-section {
+        display: block;
+        width: auto;
+
+    }
+}
+
+/* --- even smaller screen stup --- (design upto ~480px) */
+@media screen and (max-width: 600px) {
+    .siteview {
+        background-position-y: -150px;
+    }
+    .header {
+    }
+    .header__logo {
+    }
+    .logo__image {
+        position: relative;
+        display: inline-block;
+    }
+    .mainmenu__item {
+        float:none;
+        display: block;
+    }
+    .content__bon-picture{
+        min-width: 80%;
+    }
+}
