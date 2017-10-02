@@ -24,11 +24,17 @@ html {
     width: 920px;
     margin: 0 auto;
 }
-.siteview--nagrody, .siteview--zasady {
-    background: #333 url("images/nagrody_bg.jpg") no-repeat center top;}
+.siteview--nagrody {
+    background: #333 url("images/nagrody_bg.jpg") no-repeat center top;
+}
 .siteview--gallery {
     background: #333 url("images/gallery_bg.jpg") no-repeat center top;
 }
+.siteview--zasady {
+    background: #333 url("images/zasady_bg.jpg") no-repeat center top;
+}
+
+
 /* --- header  section --- */ 
 .header__logo {
     margin-left: 32px;
@@ -252,11 +258,15 @@ html {
         background-attachment: local;
         background-position-y: -290px;
     }
-    .siteview--nagrody, .siteview--zasady {
-        background-position-x: 130px;
-
+    .siteview--nagrody {
+        background-position-x: -130px;
         background-position-y: -275px;
     }
+    .siteview--zasady {
+        background-position-x: 130px;
+        background-position-y: -275px;
+    }
+
     .siteview--gallery {
         background: #333 url("images/chalk_bg.jpg") no-repeat center top;
         background-attachment: fixed;
