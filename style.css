@@ -196,7 +196,7 @@ html {
 }
 /* -- pageswitcher module -- */
 .content__pageswitch {
-    width: 920px;
+    width: 100%;
     height: 68px;
     color: white;
     background-color: #d4021d;
