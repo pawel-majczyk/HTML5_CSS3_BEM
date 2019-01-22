@@ -1,5 +1,3 @@
-# testing-learning
-
 ## „Bliskość”
 
 Tu chodzi o to  
