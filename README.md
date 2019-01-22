@@ -1,15 +1,4 @@
-## „Bliskość”
+## Block__Element--Modifier
 
-Tu chodzi o to  
-żeby grać  
-na dwie  
-osoby  
-
-
-jak ktoś ma  
-osobę  
-to fajnie  
-
-
-ja akurat  
-nie mam"  
+Pierwszy kontakt z konwencją BEM.
+Szablon ręcznie pocięty i ostylowany.
